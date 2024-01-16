@@ -28,6 +28,8 @@ nav {
     letter-spacing: -0.05px;
 }
 
+
+/* 안녕하세요 뱃지 */
 .badge {
     /* display: flex; */
     padding: 12px 24px;
@@ -53,8 +55,11 @@ nav {
     margin-bottom: 40px;
 }
 
+
+/* 헤더 부분 */
 header {
-    padding: 100px 120px;
+    padding: 30px 120px;
+    margin-bottom: 60px;
 
 }
 
@@ -90,8 +95,8 @@ header h1 em {
     text-decoration: none;
 
     display: flex;
-    width: 180px;
     padding: 24px 40px;
+    width: 180px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -113,12 +118,12 @@ header h1 em {
 
     padding: 10px;
     display: block;
-    /* 링ㅋ의 underline을 지워줌 */
+    /* 링크의 underline을 지워줌 */
     text-decoration: none;
 
     display: flex;
-    width: 180px;
     padding: 24px 40px;
+    width: 180px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -135,20 +140,156 @@ header h1 em {
     /* 36px */
 }
 
-.headerProfileContainer{
+.headerProfileContainer {
     display: flex;
-    gap:214.38px;
+    gap: 150px;
 }
 
 .profileImage {
 
+    /* width: 355.624px; => 반응형이므로 width는 안주는 경우가 많고 height도 잘 안건드는데 건드는 경우도 있음 */
     width: 355.624px;
     height: 350px;
     flex-shrink: 0;
-    
+
     border-radius: 300px;
     background: url(<path-to-image>), lightgray 50% / cover no-repeat;
 }
-.headerMainContainer{
+
+.headerMainContainer {
     display: block;
+}
+
+
+/* 자기소개 부분 */
+.intro {
+    background: linear-gradient(96deg, rgba(189, 210, 255, 0.40) 1.72%, rgba(116, 224, 215, 0.40) 158.93%);
+}
+
+.aboutMe {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 100px 40px;
+
+}
+
+.aboutMe h1 {
+    color: #000;
+    font-size: 40px;
+    /* white-space: pre-line; */
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+    /* 50px */
+    letter-spacing: -0.8px;
+}
+
+.aboutMe p {
+    color: #333;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 30px */
+
+}
+
+/* absolute를 쓰려면 그 안에 있는 posRelative의 position에 relative로 감싸져야 한다. */
+.posRelative {
+    position: relative;
+}
+
+
+/* 슈퍼맨 부분 */
+.flyingPerson {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    /* top: 0px; */
+    bottom: 48px;
+    /* right: 0px; */
+    left: 165px;
+    position: absolute;
+}
+
+/* Contact Me 부분 */
+.contactLink {
+    position: fixed;
+    right: 60px;
+    bottom: 60px;
+    border-radius: 50px;
+    border: 10px solid #BBD5F7;
+    background: linear-gradient(98deg, #BED3FF -10.83%, #D2F3E5 51.79%, #FFEBD9 110.76%);
+
+
+    width: 165px;
+    padding: 20px 10px;
+    color: rgba(64, 57, 48, 0.8);
+
+
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* 기술 스택 부분 */
+.techStackContainer {
+    display: flex;
+    padding:100px 120px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.techStackContainer h2 {
+    color: #000;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    /* 65% */
+    letter-spacing: -0.8px;
+    padding-bottom: 20px;
+}
+
+.techStackContainer p {
+    color: #333;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    padding-bottom: 80px;
+    /* 130% */
+}
+
+.techImages1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+
+    /* display: gird;
+    grid-template-columns: repeat(6,1fr) => 6개의 열 */
+}
+
+/* 애니메이션 */
+.fadeIn {
+    animation: fadein 3s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }

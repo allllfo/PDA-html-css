@@ -1,0 +1,237 @@
+@font-face {
+  font-family: "Cafe24Supermagic-Bold-v1.0";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/Cafe24Supermagic-Bold-v1.0.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  /* font-family: "Cafe24Supermagic-Bold-v1.0"; */
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  gap: 40px;
+  height: 100px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.navItem {
+  color: #403930;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 30px */
+}
+
+/* ----- header ------  */
+header {
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: 100px auto;
+  align-items: center;
+}
+.badge {
+  padding: 12px 24px;
+  border-radius: 10px;
+  background: #e6eeff;
+  width: fit-content;
+
+  /* 텍스트 속성 */
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 36px */
+
+  margin-bottom: 40px;
+}
+
+header h1 {
+  color: #333;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 80px */
+  letter-spacing: -1.28px;
+}
+
+header h1 em {
+  font-style: normal;
+  background: linear-gradient(
+    99deg,
+    #001f8f 3.58%,
+    rgba(36, 255, 203, 0.5) 90.34%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.headerLinkContainer {
+  display: flex;
+  gap: 16px;
+  margin-top: 40px;
+}
+.headerLink {
+  display: flex;
+  padding: 24px 40px;
+  gap: 10px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 36px */
+  border-radius: 16px;
+  text-decoration: none;
+  border: solid 4px black;
+}
+
+.black {
+  background-color: black;
+  color: #e6eeff;
+}
+
+.outline {
+  color: #403930;
+}
+
+.profileImage {
+  border-radius: 500px;
+  border: 10px solid #bcf2f9;
+  width: 250px;
+  height: 250px;
+  background-image: url("https://images.unsplash.com/photo-1508700929628-666bc8bd84ea?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: 60%;
+}
+/* --- About Me---  */
+
+.aboutMeContainer {
+  background: linear-gradient(
+    96deg,
+    rgba(189, 210, 255, 0.4) 1.72%,
+    rgba(116, 224, 215, 0.4) 158.93%
+  );
+}
+.aboutMe {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 120px 40px;
+}
+.aboutMe h2 {
+  color: #000;
+  font-size: 40px;
+  /* white-space: pre-line; */
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%; /* 50px */
+  letter-spacing: -0.8px;
+}
+
+.aboutMe p {
+  color: #333;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 30px */
+  white-space: pre-line;
+}
+
+.flyingPerson {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  /* top: 0px; */
+  bottom: 48px;
+  /* right: 0px; */
+  left: 165px;
+}
+
+.posRelative {
+  position: relative;
+}
+
+.fixedContactButton {
+  position: fixed;
+  right: 60px;
+  bottom: 60px;
+
+  border-radius: 50px;
+  border: 10px solid #bbd5f7;
+  background: linear-gradient(
+    98deg,
+    #bed3ff -10.83%,
+    #d2f3e5 51.79%,
+    #ffebd9 110.76%
+  );
+  width: 165px;
+  padding: 20px 40px;
+  color: rgba(64, 57, 48, 0.8);
+
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.fixedContactButton a {
+  color: black;
+}
+
+/* ----- 기술 스택 ----- */
+
+.techStackContainer {
+  padding: 100px 20px;
+}
+
+.techStackContainer p {
+  margin-bottom: 80px;
+}
+
+.techStackContainer h3 {
+  color: #000;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 65% */
+  letter-spacing: -0.8px;
+  padding-bottom: 24px;
+}
+.techStackContainer p {
+  color: #333;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 130% */
+}
+
+.teckLogos {
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-row-gap: 40px;
+  grid-column-gap: 80px;
+}
+/* ----- 애니메이션 ---- */
+
+.typing {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
