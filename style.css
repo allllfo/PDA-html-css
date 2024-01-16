@@ -1,0 +1,154 @@
+nav {
+    /* display를 어떤 식으로 할것인가 => 유연한 속성을 넣으면 기본이 가로로 정렬된다. 그 사이사이는 gap으로 줌 */
+    display: flex;
+    /* flex 하위에 있는 속성 */
+    align-items: center;
+
+    /* padding:0 120px; */
+    padding-left: 120px;
+    padding-right: 120px;
+
+    gap: 40px;
+    height: 100px;
+
+}
+
+.navItem {
+
+    /*레이아웃에 대한 스타일(5~10줄)*/
+
+    /*텍스트 스타일(3~8줄)*/
+    color: #493039;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Pretendard";
+
+    line-height: 1.5;
+    /**150%;**/
+    letter-spacing: -0.05px;
+}
+
+.badge {
+    /* display: flex; */
+    padding: 12px 24px;
+    /* justify-content: center; */
+    /* align-items: center; -> 여기 주석처리 세개는 display 속성들 여러개가 있을때 어떻게 디스플레이 할떄임 */
+    /* gap: 10px;   */
+
+    border-radius: 10px;
+    background: #E6EEFF;
+    /* 가로 사이즈를 컨텐트에 맞게 조절해줌 */
+    width: fit-content;
+
+    /* 텍스트 속성 */
+    color: #000;
+    font-family: Pretendard;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    /* 36px */
+
+    /*얘는 배경색이 있으므로 padding이 아닌 margin을 줘야한다.*/
+    margin-bottom: 40px;
+}
+
+header {
+    padding: 100px 120px;
+
+}
+
+header h1 {
+    color: #333;
+    font-family: Pretendard;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+    /* 80px */
+    letter-spacing: -1.28px;
+}
+
+header h1 em {
+    background: linear-gradient(99deg, #001F8F 3.58%, rgba(36, 255, 203, 0.50) 90.34%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.headerLinkContainer {
+    /* block으로 바꿨기 때문에 이 디스플레이를 유연하게 할거다 라고 해줌 */
+    display: flex;
+    gap: 16px;
+    /* flex-direction: row; */
+}
+
+.headerLink1 {
+    padding: 10px;
+    display: block;
+    /* 링ㅋ의 underline을 지워줌 */
+    text-decoration: none;
+
+    display: flex;
+    width: 180px;
+    padding: 24px 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 16px;
+    background: #000;
+
+    color: #E6EEFF;
+    font-family: Pretendard;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    /* 36px */
+
+}
+
+.headerLink2 {
+
+    padding: 10px;
+    display: block;
+    /* 링ㅋ의 underline을 지워줌 */
+    text-decoration: none;
+
+    display: flex;
+    width: 180px;
+    padding: 24px 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 16px;
+    border: 4px solid #403930;
+
+    color: #403930;
+    font-family: Pretendard;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    /* 36px */
+}
+
+.headerProfileContainer{
+    display: flex;
+    gap:214.38px;
+}
+
+.profileImage {
+
+    width: 355.624px;
+    height: 350px;
+    flex-shrink: 0;
+    
+    border-radius: 300px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+.headerMainContainer{
+    display: block;
+}
