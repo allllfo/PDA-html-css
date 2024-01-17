@@ -55,6 +55,14 @@ nav {
     margin-bottom: 40px;
 }
 
+/* 
+@media(max-width:768px){
+    .badge{
+        background-color: red;
+    }
+}
+*/
+
 
 /* 헤더 부분 */
 header {
@@ -85,6 +93,7 @@ header h1 em {
     /* block으로 바꿨기 때문에 이 디스플레이를 유연하게 할거다 라고 해줌 */
     display: flex;
     gap: 16px;
+    margin-top: 20px;
     /* flex-direction: row; */
 }
 
@@ -167,6 +176,7 @@ header h1 em {
 }
 
 .aboutMe {
+    /* max-width 적용하고 margin을 0(상하), auto(좌우)로 해주면 화면을 줄여도 콘텐트가 왼쪽으로 붙는게 아니라 가운데에 붙는다 */
     max-width: 960px;
     margin: 0 auto;
     padding: 100px 40px;
