@@ -289,6 +289,77 @@ header h1 em {
     grid-template-columns: repeat(6,1fr) => 6개의 열 */
 }
 
+.projectContainer{
+    display: flex;
+    gap:32px;
+    padding: 80px 120px 120px 120px;
+    flex-direction: column;
+    justify-content: center;
+
+background: rgba(244, 244, 244, 0.50);
+}
+
+.projectContainer h2{
+    color: #403930;
+font-size: 40px;
+font-weight: 600;
+line-height: 125%; /* 50px */
+letter-spacing: -0.8px;
+}
+
+.firstProject{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    border-radius: 24px;
+    background: #E6EEFF;
+}
+
+.firstDescription{
+    padding: 90px 70px;
+}
+
+.firstProject h2{
+    color: #403930;
+font-size: 40px;
+font-weight: 600;
+line-height: 125%; /* 50px */
+letter-spacing: -0.8px;
+}
+
+.firstProject p{
+    align-self: stretch;
+    color: #403930;
+font-size: 16px;
+font-weight: 500;
+line-height: 150%; /* 24px */
+margin-bottom: 40px;
+}
+
+/*
+.firstDescription firstNotionLink{
+color: #405BA1;
+font-size: 20px;
+font-weight: 600;
+line-height: 150%; /* 30px */
+/* text-decoration-line: underline; */
+/* } */
+/*/
+
+.firstDiscription firstGithubLink{
+    color: #00446A;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%; /* 30px */
+    /* text-decoration-line: underline; */
+/* } */
+
+.firstImages{
+
+}
+
 /* 애니메이션 */
 .fadeIn {
     animation: fadein 3s;
